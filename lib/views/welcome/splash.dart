@@ -2,8 +2,6 @@ import 'dart:async';
 import 'package:ecommerce/views/welcome/welcomescreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:ecommerce/views/pages/home.dart';
-import 'package:ecommerce/views/pages/bottomnav.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
