@@ -1,12 +1,12 @@
-import 'package:flutter/material.dart';
 import 'package:ecommerce/views/bottomnav.dart';
+import 'package:flutter/material.dart';
 
-class Home extends StatefulWidget {
+class Search extends StatefulWidget {
   @override
-  _HomeState createState() => _HomeState();
+  _SearchState createState() => _SearchState();
 }
 
-class _HomeState extends State<Home> {
+class _SearchState extends State<Search> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
