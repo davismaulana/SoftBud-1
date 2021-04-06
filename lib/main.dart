@@ -1,4 +1,5 @@
-import 'package:ecommerce/views/splash.dart';
+import 'package:ecommerce/themes/const.dart';
+import 'package:ecommerce/views/welcome/splash.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: kPrimaryColor,
+        scaffoldBackgroundColor: Colors.white,
       ),
       home: SplashScreen(),
     );

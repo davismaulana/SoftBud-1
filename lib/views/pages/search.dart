@@ -1,4 +1,4 @@
-import 'package:ecommerce/views/bottomnav.dart';
+import 'package:ecommerce/views/pages/bottomnav.dart';
 import 'package:flutter/material.dart';
 
 class Search extends StatefulWidget {

@@ -1,10 +1,10 @@
 import 'dart:ffi';
 import 'package:cupertino_icons/cupertino_icons.dart';
-import 'package:ecommerce/views/profileuser.dart';
-import 'package:ecommerce/views/search.dart';
+import 'package:ecommerce/views/pages/profileuser.dart';
+import 'package:ecommerce/views/pages/search.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:ecommerce/views/home.dart';
+import 'package:ecommerce/views/pages/home.dart';
 
 class BottomNav extends StatefulWidget {
   @override

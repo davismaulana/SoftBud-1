@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ecommerce/views/bottomnav.dart';
+import 'package:ecommerce/views/pages/bottomnav.dart';
 
 class Home extends StatefulWidget {
   @override

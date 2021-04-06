@@ -1,8 +1,9 @@
 import 'dart:async';
+import 'package:ecommerce/views/welcome/welcomescreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:ecommerce/views/home.dart';
-import 'package:ecommerce/views/bottomnav.dart';
+import 'package:ecommerce/views/pages/home.dart';
+import 'package:ecommerce/views/pages/bottomnav.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -17,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Timer(
         Duration(seconds: 5),
         () => Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => Home())));
+            context, MaterialPageRoute(builder: (context) => Welcome())));
   }
 
   @override
