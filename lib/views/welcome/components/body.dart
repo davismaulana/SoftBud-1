@@ -1,6 +1,6 @@
 import 'package:ecommerce/components/rounded_button.dart';
 import 'package:ecommerce/themes/const.dart';
-import 'package:ecommerce/views/login/login_screen.dart';
+import 'package:ecommerce/views/login&signup/login_screen.dart';
 import 'package:ecommerce/views/welcome/components/background.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -34,7 +34,7 @@ class Body extends StatelessWidget {
               color: kPrimaryLightColor,
               textColor: Colors.black,
               press: () {
-                Navigator.of(context).pushReplacement(
+                Navigator.of(context).push(
                   MaterialPageRoute(
                     builder: (context) => Login(),
                   ),
