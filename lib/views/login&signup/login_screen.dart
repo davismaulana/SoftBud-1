@@ -13,9 +13,6 @@ class Login extends StatefulWidget {
 class _LoginState extends State<Login> {
   bool _obscureText = true;
 
-  String _password;
-
-  // Toggles the password show status
   void _toggle() {
     setState(() {
       _obscureText = !_obscureText;
@@ -75,22 +72,33 @@ class _LoginState extends State<Login> {
               Padding(
                 padding: const EdgeInsets.all(15.0),
                 child: TextFormField(
+                  obscureText: _obscureText,
                   decoration: InputDecoration(
                     icon: Icon(
                       CupertinoIcons.lock,
                       color: kPrimaryColor,
                     ),
                     hintText: "PASSWORD",
+                    suffixIcon: InkWell(
+                      onTap: _toggle,
+                      child: Icon(
+                        CupertinoIcons.eye,
+                        color: kPrimaryColor,
+                      ),
+                    ),
                   ),
                 ),
               ),
-              NiceButton(
-                width: 255,
-                elevation: 8.0,
-                radius: 52.0,
-                text: "Login",
-                background: kPrimaryColor,
-                onPressed: () {},
+              Padding(
+                padding: const EdgeInsets.all(21.0),
+                child: NiceButton(
+                  width: 255,
+                  elevation: 8.0,
+                  radius: 52.0,
+                  text: "Login",
+                  background: kPrimaryColor,
+                  onPressed: () {},
+                ),
               ),
             ],
           ),
