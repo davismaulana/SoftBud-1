@@ -42,7 +42,7 @@ class SignupState extends State<Signup> {
               Padding(
                 padding: const EdgeInsets.all(20.0),
                 child: Text(
-                  "LOGIN",
+                  "SIGNUP",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 30.0,
@@ -89,15 +89,55 @@ class SignupState extends State<Signup> {
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(21.0),
-                child: NiceButton(
-                  width: 255,
-                  elevation: 8.0,
-                  radius: 52.0,
-                  text: "Login",
-                  background: kPrimaryColor,
-                  onPressed: () {},
+              Container(
+                margin: EdgeInsets.all(20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    SizedBox(
+                      width: MediaQuery.of(context).size.width * 0.5,
+                      height: 40,
+                      child: Container(
+                        child: Material(
+                          borderRadius: BorderRadius.circular(20),
+                          color: Colors.transparent,
+                          child: InkWell(
+                            borderRadius: BorderRadius.circular(20),
+                            splashColor: Colors.amber,
+                            onTap: () {},
+                            child: Center(
+                              child: Text(
+                                "SIGN UP",
+                                style: TextStyle(
+                                    color: kPrimaryLightColor,
+                                    fontWeight: FontWeight.w700),
+                              ),
+                            ),
+                          ),
+                        ),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20),
+                          color: kPrimaryColor,
+                        ),
+                      ),
+                    ),
+                    FloatingActionButton(
+                      onPressed: () {},
+                      mini: true,
+                      elevation: 0,
+                      child: Image(
+                        image: AssetImage("assets/images/gumgel.png"),
+                      ),
+                    ),
+                    FloatingActionButton(
+                      onPressed: () {},
+                      mini: true,
+                      elevation: 0,
+                      child: Image(
+                        image: AssetImage("assets/images/Facebook.png"),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
